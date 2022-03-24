@@ -34,8 +34,8 @@
 </body>
 </html>
 <script type="text/javascript">
-	$(document).ready(function () {
-		$("#group-1 li:first").append("!");
+	$(document).ready(function(){
+		$("#group-1 li").first().append("!");
 		$("#group-2 ol li").first().html("<em>First</em>");
 		$("#group-2 li:last").html("<em>Last!</em>");
 		$("#group-2 li:gt(2)").append("(>3)");
