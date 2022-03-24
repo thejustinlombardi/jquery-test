@@ -26,14 +26,15 @@
 </html>
 <script type="text/javascript">
 	$(document).ready(function () {
-		$(".shape").click(function(e) {
+		$(".shape").click(function(e){
 			$(e.target).hide();
 			$("#show-all").show();
 		});
-		$("#show-all").click(function() {
-			$(".shape").show(1000, "linear", function() {
+		$("#show-all").click(function(){
+			$(".shape").show(1000, "linear", function(){
 				$("#show-all").hide();
 			});
+			$("#show-all").hide();
 		});
 	});
 </script>
