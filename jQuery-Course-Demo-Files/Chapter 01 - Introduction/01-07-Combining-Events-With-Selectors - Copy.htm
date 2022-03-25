@@ -31,13 +31,13 @@
 </html>
 <script type="text/javascript">
 	$(document).ready(function () {
-		var count = 0;
-		$("#add-shape").click(function() {
+		let count = 0;
+		$("#add-shape").click(function(){
 			$("#output").append("<div><span>" + (++count) + "</span></div>");
 			$("#output div:last")
-				.addClass("shape")
-				.addClass($("#selected-shape").val())
-				.addClass($("#selected-color").val());
+			.addClass("shape")
+			.addClass($("#selected-shape").val())
+			.addClass($("#selected-color").val());
 		});
 	});
 </script>
