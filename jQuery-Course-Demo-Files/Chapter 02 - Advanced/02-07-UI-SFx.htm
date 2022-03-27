@@ -25,7 +25,9 @@
 </html>
 <script type="text/javascript">
 	$(document).ready(function() {
-		$(".animated").dialog();
+		$(".animated").dialog({
+			title: "Tester"
+		});
 		$("#yes").click(function() {
 			$(".animated").effect("bounce");
 		});
